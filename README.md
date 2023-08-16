@@ -19,8 +19,22 @@
 - `DllCallerLib.Argument[] args`: массив аргументов функции.
 Возвращает результат выполнения функции, приведенный к указанному типу.
 
-`T DllCaller.DllCallerLib.CallFunction<T>(string dllName, string funcName, List<DllCallerLib.Argument[]> args)`
+`T DllCallerLib.DllCaller.CallFunction<T>(string dllName, string funcName, List<DllCallerLib.Argument[]> args)`
 - `string dllName`: название или путь к DLL.
 - `string funcName`: название функции.
 - `List<DllCallerLib.Argument[]> args`: массив аргументов функции.
 Возвращает результат выполнения функции, приведенный к указанному типу.
+
+`object DllCallerLib.DllCaller.CallFunction(string dllName, string funcName, string type, DllCallerLib.Argument[] args)`
+- `string dllName`: название или путь к DLL.
+- `string funcName`: название функции.
+- `string type`: тип результата функции.
+- `DllCallerLib.Argument[] args`: массив аргументов функции.
+Возвращает результат выполнения функции.
+
+`object DllCallerLib.DllCaller.CallFunction(string dllName, string funcName, string type, List<DllCallerLib.Argument[]> args)`
+- `string dllName`: название или путь к DLL.
+- `string funcName`: название функции.
+- `string type`: тип результата функции.
+- `List<DllCallerLib.Argument[]> args`: массив аргументов функции.
+Возвращает результат выполнения функции.
