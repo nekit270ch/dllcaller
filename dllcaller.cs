@@ -4,7 +4,7 @@ using System.Reflection.Emit;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
-namespace DllCaller{
+namespace DllCallerLib{
     public class Argument{
         public Argument(string type, object value){
             this.Type = type;
